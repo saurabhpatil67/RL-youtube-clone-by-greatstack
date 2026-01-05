@@ -5,7 +5,7 @@ import Feed from '../../Components/Feed/Feed'
 
 
 
-const Home = ({sidebar}) => {
+const Home = ({ sidebar }) => {
 
 
   const [category, setCategory] = useState(0);
@@ -14,9 +14,9 @@ const Home = ({sidebar}) => {
 
   return (
     <>
-      <Sidebar category={category} setCategory={setCategory}   sidebar={sidebar}/>
-      <div className={`container ${sidebar?"":'large-container'}`}>
-          <Feed category={category}/>
+      <Sidebar category={category} setCategory={setCategory} sidebar={sidebar} />
+      <div className={`container ${sidebar ? "" : 'large-container'}`}>
+        <Feed category={category} />
       </div>
     </>
   )

@@ -1,4 +1,4 @@
-.play-container{
+.play-container {
     background: #f9f9f9;
     padding-left: 2%;
     padding-right: 2%;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width:900px) {
-    .play-container{
+    .play-container {
         padding-left: 5%;
         padding-right: 5%;
     }
