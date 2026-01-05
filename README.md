@@ -99,3 +99,9 @@ For security reasons, the **YouTube API key is stored in a `.env` file**.
 
 ```env
 VITE_YOUTUBE_API_KEY=your_youtube_api_key_here
+
+---
+
+## 📚 Learning Reference
+
+This project was built while learning from a YouTube tutorial (reference: GreatStack) and further enhanced to strengthen practical understanding of React, API integration, and routing.
