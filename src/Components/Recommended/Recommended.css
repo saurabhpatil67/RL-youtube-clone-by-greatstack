@@ -27,3 +27,8 @@
     margin-bottom: 3px;
 }
 
+@media (max-width:900px) {
+    .recommended{
+        flex-basis: 100%;
+    }
+}

@@ -9,8 +9,12 @@ import jack from '../../assets/jack.png'
 import user_profile from '../../assets/user_profile.jpg'
 import { API_KEY, value_converter } from '../../data';
 import moment from 'moment'
+import { useParams } from 'react-router-dom';
 
-const PlayVideo = ({videoId}) => {
+const PlayVideo = () => {
+
+    const {videoId} = useParams();
+
 
     const [apiData, setApiData] = useState(null);
     const [channelData, setChannelData] = useState(null);
@@ -29,12 +33,12 @@ const PlayVideo = ({videoId}) => {
 
         // fetching comment data 
 
-        const comment_url = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=50&videoId=${videoId}&key=${API_KEY}`;
+        const comment_url = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=45&videoId=${videoId}&key=${API_KEY}`;
         await fetch(comment_url).then(res => res.json()).then(data =>setCommentsData(data.items));
     }
     useEffect(() => {
          fetchVideoData();
-    },[])
+    },[videoId])
 
     useEffect(() => {
          fetchOtherData();
