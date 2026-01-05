@@ -79,15 +79,15 @@ When a user clicks on a video:
 
 ## 📸 Screenshots
 
-![Home Page](src/readImg/y1.png)
+![Home Page](src/readmeImg/y1.png)
 
-![Category View](src/readImg/y2.png)
+![Play View](src/readmeImg/y2.png)
 
-![Video Watch Page](src/readImg/y3.png)
+![Comment and recommended](src/readmeImg/y3.png)
 
-![Comments Section](src/readImg/y4.png)
+![home responsive](src/readmeImg/y4.png)
 
-![Recommended Videos](src/readImg/y5.png)
+![Play video responsive](src/readmeImg/y5.png)
 
 ---
 
